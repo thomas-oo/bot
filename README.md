@@ -22,6 +22,8 @@ open a new terminal window and in the new terminal window
 
 `cd bot-master`
 
+`npm install`
+
 `node app.js --size "<YOUR SIZE. EG US 10>" --url "<THE URL OF YOUR NIKE SHOE>" --dataDir "<DATAPATH FROM BEFORE>"`
 
 for example I will be copping the AJ1s in size US 11 so my command is
