@@ -6,11 +6,11 @@ Download my code to your Desktop and unzip it in desktop. After unzipping there 
 
 `brew install node`
 
-cd ~/Desktop
+`cd ~/Desktop`
 
-ls
+`ls`
 
-cd bot-master
+`cd bot-master`
 
 `java -jar -Dwebdriver.chrome.driver=./chromedriver selenium-server-standalone-3.4.0.jar`
 
@@ -18,9 +18,9 @@ now open chrome and type in `chrome://version` in the address bar. Under Profile
 
 open a new terminal window and in the new terminal window
 
-cd ~/Desktop
+`cd ~/Desktop`
 
-cd bot-master
+`cd bot-master`
 
 `node app.js --size "<YOUR SIZE. EG US 10>" --url "<THE URL OF YOUR NIKE SHOE>" --dataDir "<DATAPATH FROM BEFORE>"`
 
