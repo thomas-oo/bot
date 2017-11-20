@@ -2,12 +2,14 @@ let webdriverio = require('webdriverio')
 let commandLineArgs = require('command-line-args')
 const optionDefinitions = [
   {name: 'url', type: String},
-  {name: 'size', type: String}
+  {name: 'size', type: String},
+  {name: 'dataDir', type: String}
 ]
 const options = commandLineArgs(optionDefinitions)
 
 const size = options.size
 const url = options.url
+const dataDir = options.dataDir
 
 console.log({url: url, size: size})
 
@@ -15,7 +17,7 @@ let webdriverOptions = {
   desiredCapabilities: {
     browserName: 'chrome',
     chromeOptions: {
-      args: ['--user-data-dir=/Users/thomas/Library/Application Support/Google/Chrome/Default']
+      args: ['--user-data-dir='+dataDir]
     }
   }
 }
